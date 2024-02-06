@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Header from '@/components/Header.vue'
 </script>
 
 <template>
   <div class="app-container">
     <h1>我是app组件</h1>
-    <Header></Header>
+    <a-button>Header</a-button>
+    <SvgIcon name="wode"></SvgIcon>
   </div>
 </template>
 

@@ -1,4 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import axios from "axios"
+axios({
+  url: '/api/user/login',
+  method: 'post',
+  data: {
+    username: 'admin',
+    password: '111111'
+  }
+}).then(res => console.table(res))
+</script>
 
 <template>
   <div class="app-container">

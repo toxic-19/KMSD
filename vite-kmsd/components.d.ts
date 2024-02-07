@@ -8,7 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AButton: typeof import('ant-design-vue/es')['Button']
-    Header: typeof import('./src/components/Header.vue')['default']
+    Header: (typeof import('./src/components/Header.vue'))['default']
     SvgIcon: typeof import('./src/components/SvgIcon/index.vue')['default']
   }
 }

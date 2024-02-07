@@ -1,15 +1,15 @@
 // 应用与注册components文件夹下的所有全局组件
 import SvgIcon from './SvgIcon/index.vue'
-import type {App, Component} from "vue"
+import type { App, Component } from 'vue'
 
-const components: {[name: string]: Component} = {
-  SvgIcon
+const components: { [name: string]: Component } = {
+  SvgIcon,
 }
 
-export default  {
+export default {
   install(app: App) {
     Object.keys(components).forEach((key: string) => {
       app.component(key, components[key])
     })
-  }
+  },
 }

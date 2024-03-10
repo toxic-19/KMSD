@@ -1,13 +1,13 @@
 import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import path from 'path'
-import {ConfigEnv, UserConfigExport} from 'vite'
+import { ConfigEnv, UserConfigExport } from 'vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/dist/resolvers'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
-import {viteMockServe} from "vite-plugin-mock"
+import { viteMockServe } from 'vite-plugin-mock'
 
 // https://vitejs.dev/config/
-export default ({command}: ConfigEnv): UserConfigExport => {
+export default ({ command }: ConfigEnv): UserConfigExport => {
   return {
     plugins: [
       vue(),
@@ -25,8 +25,8 @@ export default ({command}: ConfigEnv): UserConfigExport => {
         symbolId: 'icon-[dir]-[name]',
       }),
       viteMockServe({
-        localEnabled: command === 'serve'
-      })
+        localEnabled: command === 'serve',
+      }),
     ],
     resolve: {
       alias: {
@@ -42,6 +42,6 @@ export default ({command}: ConfigEnv): UserConfigExport => {
           additionalData: '@import "./src/styles/variable.scss";',
         },
       },
-    }
+    },
   }
 }

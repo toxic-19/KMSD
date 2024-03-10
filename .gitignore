@@ -1,0 +1,25 @@
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+vite-kmsd/logs
+vite-kmsd/*.log
+vite-kmsd/npm-debug.log*
+vite-kmsd/yarn-debug.log*
+vite-kmsd/yarn-error.log*
+vite-kmsd/pnpm-debug.log*
+vite-kmsd/lerna-debug.log*
+
+# belong vite-kmsd
+vite-kmsd/.vscode
+vite-kmsd/.idea
+vite-kmsd/node_modules
+vite-kmsd/dist
